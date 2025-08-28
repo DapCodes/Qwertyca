@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qwertyca - Speed Typing Test</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="logo.png" alt="" class="logo" />
+        <p class="subtitle">Test your <i>typing speed</i> and accuracy</p>
+      </header>
+
+      <main class="main-content">
+        <!-- Settings Panel -->
+        <div class="settings-panel" id="settingsPanel">
+          <div class="settings-group">
+            <label>Test Duration:</label>
+            <div class="duration-buttons">
+              <button class="duration-btn active" data-duration="15">
+                15s
+              </button>
+              <button class="duration-btn" data-duration="30">30s</button>
+              <button class="duration-btn" data-duration="60">1min</button>
+              <button class="duration-btn" data-duration="300">5min</button>
+            </div>
+          </div>
+
+          <div class="settings-group">
+            <label>Text Mode:</label>
+            <div class="text-mode-buttons">
+              <button class="text-mode-btn active" data-mode="random">
+                Random Text
+              </button>
+              <button class="text-mode-btn" data-mode="custom">
+                Custom Text
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="custom-text-area"
+            id="customTextArea"
+            style="display: none"
+          >
+            <textarea
+              id="customTextInput"
+              placeholder="Enter your custom text here..."
+              rows="4"
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- Test Area -->
+        <div class="test-area" id="testArea">
+          <div class="stats-bar">
+            <div class="stat-item">
+              <span class="stat-label">Time:</span>
+              <span class="stat-value" id="timeDisplay">60</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">WPM:</span>
+              <span class="stat-value" id="wpmDisplay">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">CPM:</span>
+              <span class="stat-value" id="cpmDisplay">0</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-label">Accuracy:</span>
+              <span class="stat-value" id="accuracyDisplay">100%</span>
+            </div>
+          </div>
+
+          <div class="text-display" id="textDisplay">
+            <p id="textContent"></p>
+          </div>
+
+          <div class="input-area">
+            <textarea
+              id="typingInput"
+              placeholder="Click here and start typing..."
+              disabled
+            ></textarea>
+          </div>
+
+          <div class="control-buttons">
+            <button class="btn btn-primary" id="startBtn">Start Test</button>
+            <button
+              class="btn btn-secondary"
+              id="resetBtn"
+              style="display: none"
+            >
+              Reset
+            </button>
+            <button class="btn btn-secondary" id="historyBtn">
+              View History
+            </button>
+          </div>
+        </div>
+
+        <!-- Results Modal -->
+        <div class="modal-overlay" id="resultsModal">
+          <div class="modal">
+            <div class="modal-header">
+              <h2>Test Results</h2>
+              <button class="close-btn" id="closeResults">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="result-grid">
+                <div class="result-item">
+                  <div class="result-value" id="finalWPM">0</div>
+                  <div class="result-label">WPM</div>
+                </div>
+                <div class="result-item">
+                  <div class="result-value" id="finalCPM">0</div>
+                  <div class="result-label">CPM</div>
+                </div>
+                <div class="result-item">
+                  <div class="result-value" id="finalAccuracy">100%</div>
+                  <div class="result-label">Accuracy</div>
+                </div>
+                <div class="result-item">
+                  <div class="result-value" id="finalTime">0s</div>
+                  <div class="result-label">Time</div>
+                </div>
+              </div>
+              <div class="result-details">
+                <p>Correct Words: <span id="correctWords">0</span></p>
+                <p>Incorrect Words: <span id="incorrectWords">0</span></p>
+                <p>Total Characters: <span id="totalChars">0</span></p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" id="retryBtn">Try Again</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- History Modal -->
+        <div class="modal-overlay" id="historyModal">
+          <div class="modal">
+            <div class="modal-header">
+              <h2>Practice History</h2>
+              <button class="close-btn" id="closeHistory">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="history-list" id="historyList">
+                <!-- History items will be populated here -->
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" id="clearHistoryBtn">
+                Clear History
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
