@@ -1,4 +1,3 @@
-// Sample texts for random mode
 const sampleTexts = [
   "The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English alphabet and is commonly used for typing practice.",
   "Technology has revolutionized the way we communicate, work, and live. From smartphones to artificial intelligence, innovation continues to shape our future.",
@@ -8,6 +7,28 @@ const sampleTexts = [
   "Music has the power to evoke emotions, tell stories, and connect people across cultures. It serves as a universal language that transcends boundaries.",
   "Exercise and physical activity are essential for maintaining good health. Regular movement strengthens the body, improves mood, and increases energy levels.",
   "Learning new skills and pursuing knowledge is a lifelong journey. Curiosity and dedication are the keys to personal growth and development.",
+
+  // Tambahan 20 teks berbahasa Indonesia
+  "Kemerdekaan Indonesia diproklamasikan pada tanggal 17 Agustus 1945 oleh Soekarno dan Mohammad Hatta. Peristiwa ini menjadi tonggak sejarah lahirnya negara Indonesia yang merdeka dan berdaulat di mata dunia.",
+  "Bahasa pemrograman Python terkenal sederhana dan mudah dipahami. Sintaksnya yang ringkas membuat Python banyak digunakan dalam pengembangan web, kecerdasan buatan, serta analisis data.",
+  "Dalam dunia musik, melodi adalah rangkaian nada yang tersusun indah. Melodi dapat menyentuh hati pendengar dan menjadi ciri khas dari sebuah lagu yang abadi.",
+  "Lagu kebangsaan Indonesia Raya diciptakan oleh Wage Rudolf Supratman. Lagu ini pertama kali diperdengarkan pada Kongres Pemuda II tahun 1928 dan menjadi simbol persatuan bangsa.",
+  "HTML adalah bahasa markup standar untuk membuat halaman web. Dengan HTML, kita dapat menyusun teks, gambar, tautan, dan elemen lain yang ditampilkan oleh browser.",
+  "Sejarah mencatat, Candi Borobudur merupakan salah satu warisan budaya dunia. Dibangun pada abad ke-8, candi ini menjadi pusat ziarah dan kebanggaan bangsa Indonesia.",
+  "JavaScript adalah bahasa pemrograman yang berjalan di browser untuk membuat halaman web lebih interaktif. Hampir semua website modern menggunakan JavaScript dalam pengembangannya.",
+  "Pancasila adalah dasar negara Republik Indonesia yang terdiri dari lima sila. Nilai-nilai Pancasila menjadi pedoman hidup bangsa dalam menjaga persatuan dan keadilan.",
+  "Git adalah sistem kontrol versi yang membantu developer melacak perubahan kode. Dengan Git, kolaborasi dalam tim menjadi lebih mudah dan terstruktur.",
+  "Soekarno dikenal sebagai proklamator sekaligus presiden pertama Republik Indonesia. Kepemimpinannya meninggalkan jejak penting dalam sejarah perjuangan bangsa.",
+  "Framework Laravel dalam PHP memudahkan pengembang membuat aplikasi web. Laravel menyediakan fitur lengkap mulai dari routing, autentikasi, hingga manajemen database.",
+  "Batik adalah warisan budaya Indonesia yang diakui UNESCO. Setiap motif batik memiliki makna filosofis yang mencerminkan nilai-nilai kehidupan masyarakat.",
+  "Database adalah kumpulan data yang terstruktur dan saling terkait. Sistem manajemen basis data seperti MySQL digunakan untuk menyimpan dan mengolah informasi.",
+  "R.A. Kartini dikenal sebagai pahlawan emansipasi wanita Indonesia. Pemikirannya tentang pendidikan dan kesetaraan gender masih relevan hingga saat ini.",
+  "CSS atau Cascading Style Sheets digunakan untuk mempercantik tampilan halaman web. Dengan CSS, kita bisa mengatur warna, tata letak, hingga animasi.",
+  "Monumen Nasional atau Monas adalah simbol perjuangan rakyat Indonesia. Terletak di Jakarta, monumen ini menjadi destinasi wisata dan pusat pembelajaran sejarah.",
+  "Algoritma adalah langkah-langkah logis yang disusun untuk menyelesaikan masalah. Pemahaman algoritma sangat penting dalam dunia pemrograman komputer.",
+  "Wayang kulit merupakan seni pertunjukan tradisional Jawa yang sarat makna. Cerita pewayangan sering mengajarkan nilai moral dan filosofi kehidupan.",
+  "React adalah library JavaScript yang digunakan untuk membangun antarmuka pengguna. React terkenal dengan konsep komponen yang memudahkan pembuatan aplikasi web modern.",
+  "Gunung Bromo di Jawa Timur terkenal dengan pemandangan matahari terbit yang menakjubkan. Setiap tahun, ribuan wisatawan datang untuk menikmati keindahan alam ini.",
 ];
 
 // Global variables
